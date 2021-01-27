@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F4B7C19-9BD6-4F86-9F4E-9F3B38759E98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>filmstudioApp</RootNamespace>
+    <AssemblyName>filmstudioApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actor.Designer.cs">
+      <DependentUpon>Actor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardAdmin.Designer.cs">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardWorker.Designer.cs">
+      <DependentUpon>DashboardWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPanel.Designer.cs">
+      <DependentUpon>DataPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Auth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth.Designer.cs">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestAdmin.Designer.cs">
+      <DependentUpon>RequestAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestWorker.Designer.cs">
+      <DependentUpon>RequestWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateWorkerOrMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateWorkerOrMovie.Designer.cs">
+      <DependentUpon>UpdateWorkerOrMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Worker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Worker.Designer.cs">
+      <DependentUpon>Worker.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Actor.resx">
+      <DependentUpon>Actor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth.resx">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardAdmin.resx">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardWorker.resx">
+      <DependentUpon>DashboardWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPanel.resx">
+      <DependentUpon>DataPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RequestAdmin.resx">
+      <DependentUpon>RequestAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestWorker.resx">
+      <DependentUpon>RequestWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateWorkerOrMovie.resx">
+      <DependentUpon>UpdateWorkerOrMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Worker.resx">
+      <DependentUpon>Worker.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
